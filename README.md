@@ -1,4 +1,4 @@
-# new__project__vue
+# dns-copy-site
 
 ## Project setup
 ```
