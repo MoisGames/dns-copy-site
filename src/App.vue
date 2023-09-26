@@ -1,17 +1,17 @@
 <template>
-  <Geolocation_Div msg="Welcome to Your Vue.js App"/>
+  <geolocationDiv msg="Welcome to Your Vue.js App"/>
 </template>
 
 <script>
-import Geolocation_Div from './components/Geolocation_Div.vue'
+import geolocationDiv from './components/geolocationDiv.vue';
 export default {
   name: 'App',
   components: {
-    Geolocation_Div
-  }
-}
+    geolocationDiv,
+  },
+};
 </script>
-sard
+
 
 <style>
 #app {
