@@ -1,13 +1,13 @@
 <template>
-  <geolocationDiv msg="Welcome to Your Vue.js App"/>
+  <geolocationButton/>
 </template>
 
 <script>
-import geolocationDiv from './components/geolocationDiv.vue';
+import geolocationButton from './components/geolocationButton.vue';
 export default {
   name: 'App',
   components: {
-    geolocationDiv,
+    geolocationButton,
   },
 };
 </script>
