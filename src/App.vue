@@ -1,9 +1,12 @@
 <template>
+  <div class="wrapperApp">
   <geolocationButton/>
+  </div>
 </template>
 
 <script>
 import geolocationButton from './components/geolocationButton.vue';
+
 export default {
   name: 'App',
   components: {
@@ -14,12 +17,10 @@ export default {
 
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+#app{
+display: flex;
+width: 40vw;
+height: 100%;
+margin: 2vh 0 0 calc(0vw + 18vw);
 }
 </style>
