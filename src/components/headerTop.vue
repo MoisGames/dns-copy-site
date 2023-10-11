@@ -15,8 +15,13 @@
 margin-left: 20px;
 font-size: 13px;
 }
+a {
+cursor: pointer;
+line-height: 21px;
+color: #4e4e4e;
+}
 a:hover {
-text-decoration: orange;
+color: orange;
 }
 #containerHeaderTop {
 display: flex;

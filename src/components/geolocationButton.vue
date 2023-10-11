@@ -15,6 +15,7 @@ height: 30px;
 flex-direction: row;
 align-items: start;
 justify-content: start;
+color: #4e4e4e;
 }
 
 .geolocationButton {
