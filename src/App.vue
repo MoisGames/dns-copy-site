@@ -1,26 +1,28 @@
 <template>
-  <div class="wrapperApp">
-  <geolocationButton/>
+  <div id="containerApp">
+  <headerTop/>
   </div>
 </template>
 
 <script>
-import geolocationButton from './components/geolocationButton.vue';
+import headerTop from './components/headerTop.vue';
 
 export default {
   name: 'App',
   components: {
-    geolocationButton,
+    headerTop,
   },
 };
 </script>
 
 
 <style>
-#app{
+#containerApp{
 display: flex;
-width: 40vw;
+width: 70vw;
 height: 100%;
 margin: 2vh 0 0 calc(0vw + 18vw);
+font-size: 16px;
+font-family: Arial, Helvetica, sans-serif;
 }
 </style>
