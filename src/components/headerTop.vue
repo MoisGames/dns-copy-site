@@ -7,18 +7,31 @@
 <a class="headerRefs">Покупателям</a>
 <a class="headerRefs">Юридическим лицам</a>
 <a class="headerRefs">Клуб DNS</a>
+<a class="phoneHeader" href="tel:+78007707999" >8-800-77-07-999(c 7:00 до 02:00)</a>
 </header>
 </template>
 
 <style>
+template {
+font-size: 18px;
+font-weight: 400;
+font-family: "PT Sans","Helvetica","Arial",sans-serif;
+line-height: 1.42857;
+}
+
 .headerRefs {
 margin-left: 20px;
-font-size: 13px;
+}
+
+.phoneHeader {
+margin-left: 40px;
+text-decoration: none;
 }
 a {
 cursor: pointer;
 line-height: 21px;
 color: #4e4e4e;
+font-size: 13px;
 }
 a:hover {
 color: orange;
