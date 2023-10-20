@@ -20,19 +20,6 @@ background-color: rgb(173, 32, 32);
 }
 
 #formGeolocation {
-/*
-display: flex;
-flex-direction: column;
-min-width: 200px;
-max-width: 100%;
-height: 70vh;
-border: solid rgb(245, 243, 243) 10px;
-border-radius: 1% 1% 1% 1%;
-box-shadow: 0 16px 24px 0 rgba(0,0,0,.32);
-overflow: hidden;
-align-self: center;
-justify-content: start;
-background: #fff; */
 border-radius: 8px;
 background: #fff;
 min-width: 200px;

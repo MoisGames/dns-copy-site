@@ -14,21 +14,6 @@
 </template>
 
 <style>
-template {
-    display: flex;
-    align-items: center;
-    position: relative;
-    white-space: nowrap;
-    width: 1180px;
-    margin: 0 auto;
-    height: 100%;
-    box-sizing: content-box;
-    max-height: 64px;
-    font-size: 18px;
-    font-weight: 400;
-    font-family: "PT Sans","Helvetica","Arial",sans-serif;
-    line-height: 1.42857;
-}
 
 .containerHeaderBottomLogoCatalog {
     display: flex;

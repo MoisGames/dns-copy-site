@@ -10,12 +10,17 @@
 <style>
 .containerGeolocation {
 display: flex;
-width: 15vw;
+width: 300px;
 height: 30px;
 flex-direction: row;
 align-items: start;
 justify-content: start;
 color: #4e4e4e;
+font-size: 16px;
+font-family: "PT Sans","Helvetica","Arial",sans-serif;
+line-height: 21px;
+color: #4e4e4e;
+font-weight: normal;
 }
 
 .geolocationButton {
@@ -27,7 +32,7 @@ color: inherit;
 text-align: left;
 align-items: start;
 justify-content: start;
-background: url("./image/iconGeolocation.png") no-repeat left / 10px;
+background: url("../assets/image/iconGeolocation.png") no-repeat left / 13px;
 border: none;
 }
 
@@ -36,12 +41,11 @@ color: orangered;
 }
 
 .geolocationButton:hover {
-background: url("./image/iconGeolocationOrange.png") no-repeat left / 10px;
+background: url("../assets/image/iconGeolocationOrange.png") no-repeat left / 13px;
 }
 
 #geoLocationCity {
 margin-left: 20px;
-font-size: 12px;
 }
 </style>
 
