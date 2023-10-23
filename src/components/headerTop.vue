@@ -25,12 +25,19 @@
 </template>
 
 <style>
+html {
+    width: 100%;
+    position: relative;
+    border: none;
+    background-image: none;
+}
 #containerHeaderTop {
 font-size: 16px;
 font-family: "PT Sans","Helvetica","Arial",sans-serif;
 line-height: 21px;
 color: #4e4e4e;
 font-weight: normal;
+background-color: inherit;
 }
 
 .headerRefs {
@@ -75,7 +82,7 @@ display: none;
 position: absolute;
 flex-flow: column nowrap;
 box-shadow: 0 6px 8px rgba(89,16,0,.08);
-background-color: inherit;
+background-color: #fff;
 color: inherit;
 text-align: left;
 align-items: start;
@@ -98,12 +105,12 @@ margin: 15px 15px 0px 15px;
 }
 
 #buyersDropdown {
-background: url('../assets/image/arrowDown.png') no-repeat right / 10px;
+background: url('../assets/image/arrowDown.png') no-repeat 100% 35% / 10px;
 width: 110px;
 }
 
 #buyersDropdown:hover {
-background: url('../assets/image/arrowUp.png') no-repeat right / 10px;
+background: url('../assets/image/arrowUp.png') no-repeat 100% 35% / 10px;
 }
 </style>
 

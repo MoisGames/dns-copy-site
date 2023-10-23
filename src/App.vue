@@ -29,6 +29,5 @@ font-size: 18px;
 font-weight: 400;
 font-family: "PT Sans","Helvetica","Arial",sans-serif;
 line-height: 1.42857;
-color: #4e4e4e;
 }
 </style>
