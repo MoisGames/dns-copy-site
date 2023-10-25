@@ -53,6 +53,7 @@ display: inline-block;
 margin-left: 40px;
 text-decoration: none;
 font-size: inherit;
+color: #4e4e4e;
 }
 a {
 cursor: pointer;
@@ -61,7 +62,7 @@ font-size: inherit;
 color: #4e4e4e;
 text-decoration: none;
 }
-a:hover,.dropdownRefs:hover {
+.headerRefs:hover,.dropdownRefs:hover {
 color: orange;
 }
 #containerHeaderTop {

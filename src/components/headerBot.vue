@@ -14,19 +14,34 @@
     </div>
 <div class="inputSearchContainer">
     <input class="searchInput" placeholder="Поиск по сайту" type="search"
-    onfocus="document.querySelector('html').style.backgroundColor = '#d5d5d5';"
-    onblur="document.querySelector('html').style.backgroundColor = '#fff';">
-    <button class="iconSearchContainer">
-      <img class="iconSearch">
-    </button>
+      onfocus="document.querySelector('html').style.backgroundColor = '#d5d5d5';"
+      onblur="document.querySelector('html').style.backgroundColor = '#fff';">
+        <button class="iconSearchContainer">
+        </button>
 </div>
+<button class="buttonHeaderBotContainer">
+  <img class="iconButtonBottomHeader" id="comparisonIcon">
+  <div class="textButtonBottomHeader">Сравнение</div>
+</button>
+<button class="buttonHeaderBotContainer">
+  <img class="iconButtonBottomHeader" id="iconHeart">
+  <div class="textButtonBottomHeader">Избранное</div>
+</button>
+<button class="buttonHeaderBotContainer">
+  <img class="iconButtonBottomHeader" id="iconShoppingCart">
+  <div class="textButtonBottomHeader">Корзина</div>
+</button>
+<button class="buttonHeaderBotContainer">
+  <img class="iconButtonBottomHeader" id="iconEntrance">
+  <div class="textButtonBottomHeader">Войти</div>
+</button>
 </div>
 </template>
 
 <style>
 .headerBotContainer {
 margin: 2vh 0 2vh 0;
-width: auto;
+width: 100%;
 height: 10vh;
 align-items: center;
 }
@@ -92,12 +107,14 @@ align-items: center;
     transition: all 200ms ease-out 0ms;
 }
 
+/* СТРОКА ПОИСКА */
+
 .searchInput {
-margin-left: 20px;
+display: flex;
+flex-direction: row;
 height: 7vh;
 min-width: 27.5vw;
 color: #333;
-width: auto;
 border-radius: 12px;
 border: none;
 outline: none;
@@ -105,54 +122,90 @@ transition: background .3s;
 background-color: #f5f5f5;
 padding-left: 25px;
 }
-.searchInput:hover {
+.searchInput:focus, .searchInput:hover {
 box-shadow: 0 6px 8px rgba(89,16,0,.08);
 background-color: #fff;
 }
 
 .inputSearchContainer {
-display: flex;
+display: inline-flex;
+flex-direction: row;
+max-width: 27.5vw;
+margin-left: 1vw;
 }
 
 .iconSearchContainer {
 display: flex;
 position: relative;
-left: -2.5vw;
-top: 2vh;
+left: -3vw;
+top: 1.3vh;
 justify-content: end;
 align-items: end;
-background: url(../assets/image/icon-magnifier.png) no-repeat center / cover;
-width: 24px;
-height: 24px;
+background: url(../assets/image/icon-magnifier.png) no-repeat center / 24px 24px;
+min-width: 40px;
+height: 40px;
 border: none;
+border-radius: 5px;
 }
 
-.iconSearch {
+.iconSearchContainer:hover, .iconSearchContainer:focus {
+background-color: #f5f5f5;
+box-shadow: 0 6px 8px rgba(89,16,0,.08);
+}
 
+/* Конец INPUT */
+
+/* Начало кнопок HeaderBot */
+
+.buttonHeaderBotContainer {
+display: inline-flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+border: none;
+background: #fff;
+font-size: 14px;
+line-height: 18px;
+min-width: 5vw;
+height: 7vh;
+color: #4e4e4e;
+}
+
+.buttonHeaderBotContainer:hover {
+color: #4e4e4e;
+}
+
+.iconButtonBottomHeader {
+display: flex;
+flex-direction: column;
+background-size: contain;
+background-repeat: no-repeat;
+background-position: center;
+min-width: 25px;
+height: 25px;
+border: none;
+}
+.textButtonBottomHeader {
+display: flex;
+flex-direction: column;
+}
+#comparisonIcon {
+background-image: url('../assets/image/icon-circular-pie-graph.png');
+}
+
+#iconHeart {
+background-image: url('../assets/image/icon-heart.png');
+}
+
+#iconShoppingCart {
+background-image: url('../assets/image/icon-shopping-cart.png');
+}
+
+#iconEntrance {
+background-image: url('../assets/image/icon-register.png');
 }
 </style>
 
 <script>
-/* let colorHtml = document.querySelector('html');
-const focusedElement = document.activeElement;
 
-if (focusedElement == true) {
-  document.querySelector('html').style.backgroundcolor = 'red';
-} else {
-  console.log('Not valited');
-}
-const inputHeaderTop = document.getElementsByClassName('searchInput');
-const activeInputHeader =
-if (document.hasFocus()) {
-  document.querySelector('html').style.backgroundColor = 'red';
-  console.log('isFocusHeader(true) = ' + inputHeaderTop);
-  console.log('hasFocus = ' + document.hasFocus());
-  console.log('hasFocus searchInput = ' + document.hasFocus(inputHeaderTop));
-  console.log('querySelector HTML = ' + document.querySelector('html'));
-  console.log('querySelector HTML = ' + document.querySelector('*'));
-} else {
-  document.querySelector('html').style.backgroundcolor = 'green';
-  console.log('isFocusHeader(false) = ' + inputHeaderTop);
-}
-*/
 </script>

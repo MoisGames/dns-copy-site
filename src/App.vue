@@ -22,7 +22,7 @@ export default {
 <style>
 #containerApp{
 display: block;
-width: 70vw;
+max-width: 70vw;
 height: 100%;
 margin: 2vh 0 0 calc(0vw + 18vw);
 font-size: 18px;

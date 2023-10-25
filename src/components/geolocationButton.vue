@@ -36,12 +36,9 @@ background: url("../assets/image/iconGeolocation.png") no-repeat left / 13px;
 border: none;
 }
 
-a, button:hover {
-color: orangered;
-}
-
 .geolocationButton:hover {
 background: url("../assets/image/iconGeolocationOrange.png") no-repeat left / 13px;
+color: orangered;
 }
 
 #geoLocationCity {
