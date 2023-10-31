@@ -1,49 +1,76 @@
 <template>
+<nav class="headerSearchContainer">
 <div class="headerBotContainer">
     <div class="containerHeaderBottomLogoCatalog">
         <a class="containerLogoHeaderBottom">
             <div id="headerLogo">
             </div>
         </a>
-            <div class="menuCatalogButton">
+            <button class="menuCatalogButton">
                 <span class="headerBottomCatalogTittle">Каталог</span>
                     <svg class="headerBottomArrowSvg" width="24px" height="24px" fill="none" view-box="0 0 24 24">
                     <path d="M16.594 8.578L18 9.984L12 15.984L6 9.984L7.406
                  8.578L12 13.172L16.594 8.578Z" fill="#fff"></path></svg>
-            </div>
+            </button>
     </div>
 <div class="inputSearchContainer">
     <input class="searchInput" placeholder="Поиск по сайту" type="search"
-      onfocus="document.querySelector('html').style.backgroundColor = '#d5d5d5';"
-      onblur="document.querySelector('html').style.backgroundColor = '#fff';">
+    onfocus= "document.querySelector('html').style.backgroundColor = '#e7e7e7'"
+    onblur= "document.querySelector('html').style.backgroundColor = '#fff'">
         <button class="iconSearchContainer">
         </button>
 </div>
-<button class="buttonHeaderBotContainer">
-  <img class="iconButtonBottomHeader" id="comparisonIcon">
-  <div class="textButtonBottomHeader">Сравнение</div>
-</button>
-<button class="buttonHeaderBotContainer">
-  <img class="iconButtonBottomHeader" id="iconHeart">
-  <div class="textButtonBottomHeader">Избранное</div>
-</button>
-<button class="buttonHeaderBotContainer">
-  <img class="iconButtonBottomHeader" id="iconShoppingCart">
-  <div class="textButtonBottomHeader">Корзина</div>
-</button>
-<button class="buttonHeaderBotContainer">
-  <img class="iconButtonBottomHeader" id="iconEntrance">
-  <div class="textButtonBottomHeader">Войти</div>
-</button>
+  <div class="buttonContainer">
+    <button class="buttonHeaderBotContainer">
+      <img class="iconButtonBottomHeader" id="comparisonIcon">
+      <div class="textButtonBottomHeader">Сравнение</div>
+    </button>
+    <button class="buttonHeaderBotContainer">
+      <img class="iconButtonBottomHeader" id="iconHeart">
+      <div class="textButtonBottomHeader">Избранное</div>
+    </button>
+    <button class="buttonHeaderBotContainer">
+      <img class="iconButtonBottomHeader" id="iconShoppingCart">
+      <div class="textButtonBottomHeader">Корзина</div>
+    </button>
+    <button class="buttonHeaderBotContainer">
+      <img class="iconButtonBottomHeader" id="iconEntrance">
+      <div class="textButtonBottomHeader">Войти</div>
+    </button>
+  </div>
 </div>
+</nav>
 </template>
 
 <style>
+template {
+background-color: inherit;
+}
+
+
+.headerSearchContainer {
+  background-color: inherit;
+    transition: background 200ms ease-out 0s;
+    z-index: 10;
+    height: 96px;
+    box-sizing: content-box;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+
 .headerBotContainer {
-margin: 2vh 0 2vh 0;
-width: 100%;
-height: 10vh;
-align-items: center;
+  display: flex;
+    align-items: center;
+    position: relative;
+    white-space: nowrap;
+    width: 1180px;
+    margin: 0 auto;
+    height: 100%;
+    box-sizing: content-box;
+    max-height: 64px;
+    font-size: 14px;
 }
 
 .containerHeaderBottomLogoCatalog {
@@ -60,12 +87,13 @@ align-items: center;
     border-radius: 12px;
     position: relative;
     width: 275px;
+    background-color: inherit;
 }
 
 .containerLogoHeaderBottom  {
     height: 64px;
     display: flex;
-    width: 50%;
+    width: 30%;
     padding-left: 20px;
     padding-right: 20px;
     align-items: center;
@@ -73,6 +101,11 @@ align-items: center;
     border-bottom-left-radius: 12px;
     transition: .2s;
     cursor: pointer;
+}
+
+.containerLogoHeaderBottom:hover {
+transition: .2s;
+background: rgba(255,255,255,.12);
 }
 
 #headerLogo {
@@ -101,6 +134,15 @@ align-items: center;
     font-size: 16px;
     margin-bottom: 0;
     padding: 10px 16px 10px 20px;
+    justify-content: flex-end;
+    align-items: flex-end;
+    border: none;
+    margin-left: 24px;
+}
+
+.menuCatalogButton:hover {
+background: rgba(255,255,255,.22);
+box-shadow: 0 6px 8px rgba(89,16,0,.08);
 }
 
 .headerBottomArrowSvg {
@@ -108,30 +150,31 @@ align-items: center;
 }
 
 /* СТРОКА ПОИСКА */
+.inputSearchContainer {
+display: inline-flex;
+width: 536px;
+max-width: 536px;
+margin: 0 29px 0 20px;
+border: none;
+}
+
 
 .searchInput {
-display: flex;
-flex-direction: row;
-height: 7vh;
-min-width: 27.5vw;
+display: inline-block;
+width: 100%;
+height: 64px;
 color: #333;
-border-radius: 12px;
-border: none;
+border-radius: 8px;
 outline: none;
 transition: background .3s;
 background-color: #f5f5f5;
 padding-left: 25px;
+box-sizing: border-box;
 }
 .searchInput:focus, .searchInput:hover {
-box-shadow: 0 6px 8px rgba(89,16,0,.08);
+box-shadow: 6px 6px 6px 8px rgba(89,16,0,.08);
 background-color: #fff;
-}
-
-.inputSearchContainer {
-display: inline-flex;
-flex-direction: row;
-max-width: 27.5vw;
-margin-left: 1vw;
+z-index: 2;
 }
 
 .iconSearchContainer {
@@ -157,18 +200,25 @@ box-shadow: 0 6px 8px rgba(89,16,0,.08);
 
 /* Начало кнопок HeaderBot */
 
+.buttonContainer {
+display: inline-flex;
+background-color: inherit;
+width: 320px;
+}
+
 .buttonHeaderBotContainer {
 display: inline-flex;
 flex-direction: column;
 justify-content: center;
 align-items: center;
 border: none;
-background: #fff;
+background: inherit;
 font-size: 14px;
 line-height: 18px;
-min-width: 5vw;
+width: 90px;
 height: 7vh;
 color: #4e4e4e;
+border: none;
 }
 
 .buttonHeaderBotContainer:hover {
@@ -207,5 +257,12 @@ background-image: url('../assets/image/icon-register.png');
 </style>
 
 <script>
-
+/*
+Vue.createApp({
+  methods: {
+    onfocus(event) {
+      document.querySelector('html').style.backgroundColor = orange;
+    },
+  },
+}); */
 </script>

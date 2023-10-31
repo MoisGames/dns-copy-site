@@ -5,6 +5,22 @@
   </div>
 </template>
 
+<style>
+template {
+background-color: inherit;
+}
+
+#containerApp{
+display: block;
+max-width: 1180px;
+margin: 0 auto;
+font-size: 18px;
+font-weight: 400;
+font-family: "PT Sans","Helvetica","Arial",sans-serif;
+line-height: 1.42857;
+}
+</style>
+
 <script>
 import headerTop from './components/headerTop.vue';
 import headerBot from './components/headerBot.vue';
@@ -18,16 +34,3 @@ export default {
 };
 </script>
 
-
-<style>
-#containerApp{
-display: block;
-max-width: 70vw;
-height: 100%;
-margin: 2vh 0 0 calc(0vw + 18vw);
-font-size: 18px;
-font-weight: 400;
-font-family: "PT Sans","Helvetica","Arial",sans-serif;
-line-height: 1.42857;
-}
-</style>

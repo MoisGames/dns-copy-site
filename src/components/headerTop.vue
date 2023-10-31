@@ -25,11 +25,15 @@
 </template>
 
 <style>
+template {
+background-color: inherit;
+}
+
 html {
     width: 100%;
     position: relative;
     border: none;
-    background-image: none;
+    background-color: inherit;
 }
 #containerHeaderTop {
 font-size: 16px;
@@ -38,6 +42,7 @@ line-height: 21px;
 color: #4e4e4e;
 font-weight: normal;
 background-color: inherit;
+margin-top: 20px;
 }
 
 .headerRefs {
@@ -95,6 +100,7 @@ justify-content: start;
 margin: 10px 0 0 10px;
 border-radius: 10px;
 border: #4e4e4e 0,1px solid;
+z-index: 1;
 }
 
 .dropdownRefs {
