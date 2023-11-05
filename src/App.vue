@@ -2,6 +2,7 @@
   <div id="containerApp">
   <div class="headerTopApp"><headerTop/></div>
   <div class="headerBotApp"><headerBot/></div>
+  <homePage></homePage>
   </div>
 </template>
 
@@ -24,12 +25,14 @@ line-height: 1.42857;
 <script>
 import headerTop from './components/headerTop.vue';
 import headerBot from './components/headerBot.vue';
+import homePage from './components/homePage.vue';
 
 export default {
   name: 'App',
   components: {
     headerTop,
     headerBot,
+    homePage,
   },
 };
 </script>

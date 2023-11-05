@@ -156,6 +156,7 @@ width: 536px;
 max-width: 536px;
 margin: 0 29px 0 20px;
 border: none;
+z-index: 4;
 }
 
 
@@ -165,11 +166,13 @@ width: 100%;
 height: 64px;
 color: #333;
 border-radius: 8px;
+border: none;
 outline: none;
 transition: background .3s;
 background-color: #f5f5f5;
 padding-left: 25px;
 box-sizing: border-box;
+z-index: 2;
 }
 .searchInput:focus, .searchInput:hover {
 box-shadow: 6px 6px 6px 8px rgba(89,16,0,.08);
@@ -182,18 +185,17 @@ display: flex;
 position: relative;
 left: -3vw;
 top: 1.3vh;
-justify-content: end;
-align-items: end;
 background: url(../assets/image/icon-magnifier.png) no-repeat center / 24px 24px;
 min-width: 40px;
 height: 40px;
 border: none;
-border-radius: 5px;
+z-index: 3;
 }
 
 .iconSearchContainer:hover, .iconSearchContainer:focus {
 background-color: #f5f5f5;
 box-shadow: 0 6px 8px rgba(89,16,0,.08);
+z-index: 2;
 }
 
 /* Конец INPUT */
@@ -204,6 +206,7 @@ box-shadow: 0 6px 8px rgba(89,16,0,.08);
 display: inline-flex;
 background-color: inherit;
 width: 320px;
+border: none;
 }
 
 .buttonHeaderBotContainer {
@@ -211,7 +214,6 @@ display: inline-flex;
 flex-direction: column;
 justify-content: center;
 align-items: center;
-border: none;
 background: inherit;
 font-size: 14px;
 line-height: 18px;
