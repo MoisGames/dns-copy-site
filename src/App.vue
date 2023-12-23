@@ -35,5 +35,6 @@ export default {
     homePage,
   },
 };
+
 </script>
 

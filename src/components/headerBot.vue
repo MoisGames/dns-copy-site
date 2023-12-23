@@ -51,7 +51,7 @@ background-color: inherit;
 .headerSearchContainer {
   background-color: inherit;
     transition: background 200ms ease-out 0s;
-    z-index: 10;
+    z-index: 2;
     height: 96px;
     box-sizing: content-box;
     font-size: 14px;
@@ -172,12 +172,12 @@ transition: background .3s;
 background-color: #f5f5f5;
 padding-left: 25px;
 box-sizing: border-box;
-z-index: 2;
+z-index: 4;
 }
 .searchInput:focus, .searchInput:hover {
 box-shadow: 6px 6px 6px 8px rgba(89,16,0,.08);
 background-color: #fff;
-z-index: 2;
+z-index: 4;
 }
 
 .iconSearchContainer {

@@ -100,7 +100,7 @@ justify-content: start;
 margin: 10px 0 0 10px;
 border-radius: 10px;
 border: #4e4e4e 0,1px solid;
-z-index: 1;
+z-index: 1000;
 }
 
 .dropdownRefs {
